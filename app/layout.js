@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={roboto.className}>
-        <h1>this should appear to be an header</h1>
+        <h1>this should appear to be an header..</h1>
         {children}
       </body>
     </html>
