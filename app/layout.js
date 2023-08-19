@@ -1,6 +1,8 @@
 import './globals.css'
 import { Roboto } from 'next/font/google';
 
+import ResponsiveAppBar from './AppBar';
+
 const roboto = Roboto({ subsets: ['latin'], weight: "100" })
 
 export const metadata = {
@@ -12,7 +14,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={roboto.className}>
-        <h1>this should appear to be an header..</h1>
+        <ResponsiveAppBar />
         {children}
       </body>
     </html>
